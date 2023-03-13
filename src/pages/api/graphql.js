@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import context from "./context";
 import micro_cors from "micro-cors";
 
-mongoose.connect(process.env.NEXT_API_MONGODB, {
+await mongoose.connect(process.env.NEXT_API_MONGODB, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
